@@ -66,3 +66,27 @@
         Enviar
     </button>
 </form>
+
+<br>
+<br>
+
+
+<form action="">
+    <datalist id="emailslist">
+        <option>leo@gmail.com.br</option>
+        <option>bia@gmail.com.br</option>
+        <option>neide@gmail.com.br</option>
+    </datalist>
+    <input type="email" 
+        pattern=".+@gmail\.com\.br"
+        placeholder="E-mail"
+        title="Apenas e-mails do @gmail"
+        list="emailslist"
+        multiple
+        required>
+
+
+    <button type="submit">
+        Enviar
+    </button>
+</form>
