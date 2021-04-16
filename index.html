@@ -201,15 +201,30 @@
         minlength="1"></textarea>
     
 </fieldset>
--->
-
 <fieldset>
     <legend>Bora tomar café</legend>
     <label for="carselect">Qual o modelo do carro?</label>
     <select name="carmodel" id="carselect" size="2" multiple>
-        <!-- <option value="">Selecione o modelo</option> -->
+        <option value="">Selecione o modelo</option> 
         <option value="fiat">Uno</option>
         <option value="audi">A3</option>
         <option value="bmw">X6</option>
+    </select>
+</fieldset>
+-->
+
+<fieldset>
+    <legend>Pets</legend>
+    <select name="pets" size="8" multiple>
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="bird">Bird</option>
+        </optgroup>
     </select>
 </fieldset>
