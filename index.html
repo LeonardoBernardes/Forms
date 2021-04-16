@@ -211,8 +211,6 @@
         <option value="bmw">X6</option>
     </select>
 </fieldset>
--->
-
 <fieldset>
     <legend>Pets</legend>
     <select name="pets" size="8" multiple>
@@ -228,3 +226,26 @@
         </optgroup>
     </select>
 </fieldset>
+-->
+<fieldset>
+    <legend>Pets</legend>
+    <datalist id="searchterms">
+        <option value="1">bird</option>
+        <option value="2">dog</option>
+        <option value="3">cat</option>
+    </datalist>
+    <form action="">
+        <input type="search"
+            name="q"
+            aria-label="Campo de pesquisa" 
+            list="searchterms"
+            placeholder="Digite a busca"
+            pattern="[0-9]{1}"
+            title="Selecione"
+        >
+        <button>
+            Search
+        </button>
+    </form>
+</fieldset>
+
