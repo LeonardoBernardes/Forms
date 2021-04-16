@@ -35,7 +35,9 @@
     <option>#ff0000</option>
     <option>#00ff00</option>
 </datalist>
+
 <br><br>
+
 <input type="text" 
     autocomplete="login"
     placeholder="Digite o login">
@@ -43,3 +45,24 @@
 <input type="email" disabled>
 <input type="file" >
 <input type="date" readonly>
+
+<br><br>
+
+<form action="">
+    <input type="password"
+        minlength="4"
+        maxlength="8"
+        size="8"
+        required
+    >
+    <input type="password"
+    pattern="[0-9a-fA-F]{4,8}"
+    title="Coloque entre 4 a 8 caracteres Hexadecimal"
+    required
+    disabled
+    >
+    <input type="text" required>
+    <button type="submit">
+        Enviar
+    </button>
+</form>
