@@ -1,29 +1,25 @@
-const element = document.querySelector('h1')
-console.log(element.textContent)
-element.innerHTML = "Olá mundo"
+const element = document.querySelector('header')
+//Pegando elemento pai
+console.log(element.parentNode) // Sem espaços 
+console.log(element.parentElement) // com espaços 
 
-const inputContato = document.querySelector('#contato')
-inputContato.value = "Leonardo"
-console.log(inputContato.value)
+//Pegando elemento filho
+console.log(element.children) // Sem espaços 
+console.log(element.childNodes) // com espaços 
 
-const header = document.querySelector('header')
-header.setAttribute('id','header')
+console.log(element.firstElementChild) // sem espaços 
+console.log(element.firstChild) // com espaços 
 
-console.log(header)
-const headerID = document.querySelector('#header')
-console.log(header.getAttribute('id'))
-// header.removeAttribute('id')
-//console.log(header)
+console.log(element.lastElementChild) // sem espaços 
+console.log(element.lastChild) // com espaços 
 
-const h1 = document.querySelector('h1')
-h1.style.backgroundColor = "#ff0000"
-h1.style.color = "#ffffff"
+//Pegando elemento irmão
 
+const element2 = document.querySelector('header')
 
-const h2 = document.querySelector('h2')
-h2.classList.add('active')
-console.log(h2)
+console.log(element2.nextElementSibling) //sem espaços
+console.log(element2.nextSibling) //com espaços
 
-const body =  document.querySelector('body')
-body.classList.add('green')
-body.classList.toggle('green') // if class on then off else on
+console.log(element2.previousElementSibling) //sem espaços
+console.log(element2.previousSibling) //com espaços
+
