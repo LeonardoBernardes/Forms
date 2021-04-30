@@ -1,8 +1,18 @@
-ul li:first-child {
-    font-weight: bold;
-    color: red;
+a:hover {
+    color:red;
 }
 
-ul li:nth-of-type(3) {
-    color: turquoise;
+input:focus {
+    background-color: green;
+}
+
+input:disabled {
+    background-color: grey;
+}
+
+li::before  {
+    content: ">"
+}
+li::after  {
+    content: ":"
 }
