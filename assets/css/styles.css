@@ -1,13 +1,8 @@
-body article h2 {
-    color:red;
+ul li:first-child {
+    font-weight: bold;
+    color: red;
 }
 
-body > article > h2 {
-    color:green;
-}
-span + p {
-    color: yellow; /* Só o primeiro irmão */
-}
-span ~ p {
-    color: blue; /* Todos irmãos */
+ul li:nth-of-type(3) {
+    color: turquoise;
 }
